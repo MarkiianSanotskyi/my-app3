@@ -4,6 +4,10 @@ import './index.css';
 import App from './App'; 
 import * as serviceWorker from './serviceWorker';
 
+function FormattedDate(props) {
+	return <h2>It is {props.date.toLocaleTimerString()}.</h2>;
+}
+
 class Clock extends React.Component {
 
 	constructor(props) {
