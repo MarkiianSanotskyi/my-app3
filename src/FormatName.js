@@ -1,22 +1,28 @@
 import React from 'react';
 
-import './App.css';
 
+
+
+function FormatName2() {
+return element
+}
 
 function FormatName(user) {
   return user.firstName + ' ' + user.lastName;
 }
 
 const user = {
-  firstName: 'Harper',
-  lastName: 'Perez',
+  firstName: 'Markiian',
+  lastName: 'Sanotskyi',
 };
 
-function FormatName2() {
+
+
+
  const element = <h1>Hello, {FormatName(user)}!</h1>;
 
- }
 
 
 
-export default FormatName;
+
+export default FormatName2;
