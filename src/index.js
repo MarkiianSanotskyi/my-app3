@@ -4,68 +4,48 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-function FormattedDate(props) {
-  return <h2>It is {props.date.toLocaleTimeString()}.</h2>;
-}
-
-class Clock extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {date: new Date()};
-  }
-
-  componentDidMount() {
-    this.timerID = setInterval(
-      () => this.tick(),
-      1000
-    );
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timerID);
-  }
-
-  tick() {
-    this.setState({
-      date: new Date()
-    });
-  }
-
-  render() {
-    return (
-      <div>
-        <h1>Hello, world!</h1>
-        <FormattedDate date={this.state.date} />
-      </div>
-    );
-  }
-}
-
-function App2() {
-  return (
-    <div>
-      <Clock />
-      <Clock />
-      <Clock />
 
 
-    </div>
-  );
-}
+class Toggle extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {isToggleOn: true};
 
-function ActionLink() {
-	function handleClick(e) {
-		e.preventDefault();
-		console.log('The link was clicked.')
+		this.handleClick = this.handleClick.bind(this);
 	}
-	return(
-		<a href="#" onClick={handleClick}> Click me </a>
-	)
+
+
+	handleClick() {
+		this.setState(state => ({
+			isToggleOn: !state.isToggleOn
+		}));
+	}
+
+	render() {
+		return(
+			<button onClick={this.handleClick}>
+			{this.state.isToggleOn ? 'ON' : 'OFF'}
+			</button>
+			);
+	}
+}
+
+class LoggingButton extends React.Component {
+	handleClick = () => {
+		console.log('this is', this);
+	}
+
+	render() {
+		return(
+		<button onClick={(e) => this.handleClick(e)}>
+		Click me
+		</button>
+		);
+	}
 }
 
 
-
-ReactDOM.render(<ActionLink />, document.getElementById('root'));
+ReactDOM.render(<LoggingButton />, document.getElementById('root'));
 
 
 
