@@ -11,6 +11,23 @@ class Clock extends React.Component {
 		this.state = {date: new Date()};
 	}
 
+	componentDidMount() {
+		this.timerID = setInterval(
+			() => this.tick(),
+			1000
+			);
+	}
+
+	componentWillMount() {
+		clearInterval(this.timerID);
+	}
+
+	tick() {
+		this.setState({
+			date: new Date()
+		});
+	}
+
 	render() {
 	return (
 		<div>
@@ -21,10 +38,8 @@ class Clock extends React.Component {
 			}
 }
 
-function tick() {
 ReactDOM.render(<Clock />, document.getElementById('root'));
 
-}
 
 
 // If you want your app to work offline and load faster, you can change
