@@ -2,7 +2,7 @@
   "name": "my-app3",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/MarkiianSanotskyi/my-app3",
+  "homepage": "https://MarkiianSanotskyi.guthub.io/my-app3",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
