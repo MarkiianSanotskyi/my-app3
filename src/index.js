@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App'; 
+import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 function FormattedDate(props) {
@@ -41,7 +41,7 @@ class Clock extends React.Component {
 		);
 			}
 }
-
+BlaBlaBlA
 ReactDOM.render(<Clock />, document.getElementById('root'));
 
 
