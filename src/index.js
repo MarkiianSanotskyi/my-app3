@@ -47,11 +47,25 @@ function App2() {
       <Clock />
       <Clock />
       <Clock />
+
+
     </div>
   );
 }
 
-ReactDOM.render(<App2 />, document.getElementById('root'));
+function ActionLink() {
+	function handleClick(e) {
+		e.preventDefault();
+		console.log('The link was clicked.')
+	}
+	return(
+		<a href="#" onClick={handleClick}> Click me </a>
+	)
+}
+
+
+
+ReactDOM.render(<ActionLink />, document.getElementById('root'));
 
 
 
