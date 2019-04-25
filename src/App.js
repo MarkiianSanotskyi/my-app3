@@ -1,13 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     
-<h1>Hello world</h1>
+  	<Header />
+
+
       
   );
 }
+
+class Header extends React.Component {
+	render() {
+		return (
+				<div id="header">Header here</div>
+			);
+	}
+}
+
 
 export default App;
