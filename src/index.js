@@ -5,46 +5,22 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 
-function WarningBanner(props) {
-	if (!props.warn) {
-		return null;
-	}
 
+
+
+function NumberList(props) {
+	const numbers = props.numbers;
+	const listItems = numbers.map((number) => 
+		<li key={number.toString()}>{number}</li>
+	);
 	return (
-		<div className="warning">
-		Warning!
-		</div>
-		);
+		<ul>{listItems}</ul>
+	);
 }
 
-class Page extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {showWarning: true};
-		this.handleToggleClick = this.handleToggleClick.bind(this);
-	}
+const numbers = [1, 2, 3, 4, 5];
 
-	handleToggleClick() {
-		this.setState(state => ({
-			showWarning: !state.showWarning
-		}));
-	}
-
-	render() {
-		return(
-			<div>
-			<WarningBanner warn={this.state.showWarning} />
-			<button onClick={this.handleToggleClick}>
-				{this.state.showWarning ? 'Hide' : 'Show'}
-			</button>
-			</div>
-		);
-	}
-}
-
-
-
-ReactDOM.render(<Page />, document.getElementById('root'));
+ReactDOM.render(<NumberList numbers={numbers} />, document.getElementById('root'));
 
 
 
