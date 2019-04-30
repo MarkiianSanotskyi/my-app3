@@ -29,9 +29,7 @@ export const HeaderBar= () => (
     			<Col xs={2}>
     				<Logo />
     			</Col>
-				<Col xs={4}>
-    				<SearchBar />
-    			</Col>
+				
     		</Row>
 
     		</Container>
