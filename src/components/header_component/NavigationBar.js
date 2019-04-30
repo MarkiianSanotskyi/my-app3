@@ -4,9 +4,6 @@ import { Nav, Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const Styles = styled.div`
-  .navbar {
-    background-color: #222;
-  }
   a, .navbar-brand, .navbar-nav .nav-link {
     color: #bbb;
     &:hover {
