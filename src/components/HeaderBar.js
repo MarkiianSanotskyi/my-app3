@@ -3,7 +3,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
 import { Logo } from './header_component/Logo';
 import  SearchBar  from './header_component/SearchBar';
-
+import  { SelectLang } from './header_component/SelectLang';
+import  { Navigation } from './header_component/Navigation';
 
 
 const Styles = styled.div`
@@ -31,7 +32,13 @@ export const HeaderBar= () => (
     			</Col>
 				<Col xs={4}>
     				<SearchBar />
-    			</Col>				
+    			</Col>
+                <Col xs={2}>
+                    <SelectLang />
+                </Col>	
+                <Col>
+                    <Navigation />
+                </Col>			
     		</Row>
 
     		</Container>

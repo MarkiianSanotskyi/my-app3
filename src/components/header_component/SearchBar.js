@@ -5,6 +5,8 @@ import styled from 'styled-components';
 import SearchInput, {createFilter} from 'react-search-input';
 import emails  from './mail';
 import IconSearch from './SearchIcon';
+import searchImage from '../../assets/search.png';
+
 
 
 
@@ -17,7 +19,9 @@ const Styles = styled.div`
 	padding-top: 35px;
 }
 .searchBox{posiotion:relative;
-	.svg-box{position:absolute;top:41px;left:25px;}
+	.svg-box{    position: absolute;
+    top: 7px;
+    left: 10px;}
 svg{ fill:#cfd8dc;  background: red;-webkit-background-clip: text;}
 }
 .searchBox input{
@@ -29,13 +33,11 @@ svg{ fill:#cfd8dc;  background: red;-webkit-background-clip: text;}
     box-shadow:none;
         border: 1px solid transparent;
             background: #eceff1;
-    -webkit-box-shadow: inset 0 1px 0 0 #cfd8dc;
-    -moz-box-shadow: inset 0 1px 0 0 #cfd8dc;
-    box-shadow: inset 0 1px 0 0 #cfd8dc;
+    
     transition: background .25s ease,box-shadow-color .25s ease,border-color .75s ease;
     border-radius:3px;
     padding-left:50px;
-    width:100%;
+    width:100%;outline:none;
 
   
     :focus {
@@ -53,7 +55,15 @@ svg{ fill:#cfd8dc;  background: red;-webkit-background-clip: text;}
 	
 }
 
+.searchInput{
+	position:absolute;right:0px;top:0px;width:40px !important;height:40px !important;
+	border-radius:3px;
+	padding:0px !important;outline:none;cursor:pointer;
+	z-index:3;  background: url(${searchImage}) no-repeat 50% 50% !important;
+    background-size: 50% !important; background-color: #f4511e !important;
+}
 
+form{position:relative;}
 
 
 `;
@@ -94,29 +104,29 @@ class SearchBar extends Component {
 function addedClassSvgActive() {
   var element = document.getElementById("searchBoxForSvg2");
 
+
   if (element.classList) { 
     element.classList.toggle("active");
   } else {
-    var classes = element.className.split(" ");
-    var i = classes.indexOf("active");
-
-    if (i >= 0) 
-      classes.splice(i, 1);
-    else 
-      classes.push("active");
-      element.className = classes.join(" "); 
+   
   }
 }
+
+
 
 
     return (
       <div>
       <Styles>
       		<div className="searchBox">
+      			<form>
 				<div id="searchBoxForSvg2" className="searchBoxForSvg">
         			<SearchInput className="search-input" onChange={this.searchUpdated} onClick={ addedClassSvgActive } placeholder="Search Within Results" />
         			<ReactSearchSvg />
 				</div>
+				<input className="searchInput" type="submit" value="" />
+				</form>
+
         	</div>
         {filteredEmails.map(email => {
           return (
@@ -125,7 +135,7 @@ function addedClassSvgActive() {
               <div className="from">{email.user.name}</div>
               <div className="subject">{email.subject}</div>
             </div>
-
+			
           )
         })}
          </Styles>

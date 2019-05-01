@@ -9,7 +9,7 @@ import boatImage from '../assets/boat.jpg';
 
 export const CardComponent = () => (
 
-		<Card style={{ width: '18rem' }}>
+    <Card style={{ width: '18rem' }}>
   <Card.Img variant="top" src={ boatImage } />
   <Card.Body>
     <Card.Title>Card Title</Card.Title>
@@ -20,4 +20,4 @@ export const CardComponent = () => (
     <Button variant="primary">Go somewhere</Button>
   </Card.Body>
 </Card>
-		);
+    );
