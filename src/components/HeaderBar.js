@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
 import { Logo } from './header_component/Logo';
-
+import  SearchBar  from './header_component/SearchBar';
 
 
 
@@ -29,7 +29,9 @@ export const HeaderBar= () => (
     			<Col xs={2}>
     				<Logo />
     			</Col>
-				
+				<Col xs={4}>
+    				<SearchBar />
+    			</Col>				
     		</Row>
 
     		</Container>
