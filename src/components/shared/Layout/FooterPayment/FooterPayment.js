@@ -18,7 +18,11 @@ const Styles = styled.div`
         max-width: 100%;
       }
     }
-    li:first-child{max-width:100px;color:white;font-size:10px;  }
+    li:first-child {
+      max-width: 100px;
+      color: white;
+      font-size: 10px;
+    }
   }
 `;
 
@@ -26,9 +30,7 @@ const FooterPayment = () => (
   <Styles>
     <div>
       <ul className="NavigationList">
-        <li>
-          Secure Payment:
-        </li>
+        <li>Secure Payment:</li>
         <li>
           <Logo />
         </li>

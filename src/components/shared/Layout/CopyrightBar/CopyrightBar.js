@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 const Styles = styled.div`
   p {
-    color: white;font-size:10px; 
+    color: white;
+    font-size: 10px;
   }
 `;
 
