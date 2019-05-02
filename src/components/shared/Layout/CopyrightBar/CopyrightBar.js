@@ -1,20 +1,11 @@
 import React from "react";
-import styled from "styled-components";
-
-const Styles = styled.div`
-  p {
-    color: white;
-    font-size: 10px;
-  }
-`;
+import { StyledP } from "./style";
 
 const CopyrightBar = () => (
-  <Styles>
-    <p>
-      © 2019 Info Global Services Ltd. All Rights Reserved Privacy Policy Refund
-      Policy Terms Secure Payment:
-    </p>
-  </Styles>
+  <StyledP>
+    © 2019 Info Global Services Ltd. All Rights Reserved Privacy Policy Refund
+    Policy Terms Secure Payment:
+  </StyledP>
 );
 
 export default CopyrightBar;
