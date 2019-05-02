@@ -5,11 +5,19 @@ import SearchBar from "../SearchBar/SearchBar";
 
 import { Header } from "./style";
 
-const HeaderBar = () => (
-  <Header>
-    <Logo />
-    <SearchBar />
-  </Header>
+const HeaderBar = () => ( <
+    Header >
+    <
+    Logo / >
+    <
+    Logo / >
+    <
+    Logo / >
+    <
+
+    SearchBar / >
+    <
+    /Header>
 );
 
 export default HeaderBar;
