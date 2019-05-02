@@ -1,5 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import { Footer, Container } from "./style";
+import CopyrightBar from "../CopyrightBar/CopyrightBar";
+import FooterNavigationBar from "../FooterNavigationBar/FooterNavigationBar";
+import FooterPayment from "../FooterPayment/FooterPayment";
 
 const Styles = styled.div`
   .footer {
@@ -16,9 +20,13 @@ const Styles = styled.div`
 
 const FooterBar = () => (
   <Styles>
-    <div className="footer">
-      <p>Footer and copyright in it!</p>
-    </div>
+    <Footer>
+      <Container className="container">
+        <CopyrightBar />
+        <FooterNavigationBar />
+        <FooterPayment />
+      </Container>
+    </Footer>
   </Styles>
 );
 

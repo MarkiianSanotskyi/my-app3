@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const Header = styled.header`
-  background: #fff;
-  z-index: 70;
-  position: relative;
-  border-bottom: 1px solid rgba(36, 50, 56, 0.2);
+export const Footer = styled.footer`
+  background-color: #222;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 80px;
 `;
 
 export const Container = styled.div`
