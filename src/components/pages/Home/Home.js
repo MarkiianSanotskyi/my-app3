@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "../../shared/Layout/FooterBar/style";
+import { Container } from "./style";
 import Card from "./Card/Card";
 import styled from "styled-components";
 
