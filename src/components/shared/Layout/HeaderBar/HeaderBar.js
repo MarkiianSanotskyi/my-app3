@@ -1,22 +1,19 @@
 import React from "react";
-
 import Logo from "../Logo/Logo";
 import SearchBar from "../SearchBar/SearchBar";
 
-import { Header } from "./style";
+import { Header, Container } from "./style";
 
 const HeaderBar = () => ( <
     Header >
     <
-    Logo / >
+    Container className = "container" >
     <
     Logo / >
     <
-    Logo / >
-    <
-
     SearchBar / >
     <
+    /Container>{" "} <
     /Header>
 );
 
