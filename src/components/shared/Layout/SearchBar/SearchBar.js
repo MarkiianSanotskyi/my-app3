@@ -3,7 +3,7 @@ import styled from "styled-components";
 import IconSearch from "../../icons/SearchIcon/SearchIcon";
 import searchImage from "../../../../assets/search.png";
 
-const Styles = styled.div `
+const Styles = styled.div`
   .mail {
     display: none;
   }
@@ -75,48 +75,34 @@ const Styles = styled.div `
 `;
 
 const styles = {
-    fontFamily: "sans-serif"
+  fontFamily: "sans-serif"
 };
 
-const ReactSearchSvg = () => ( <
-    div style = { styles }
-    className = "svg-box" >
-    <
-    IconSearch fill = "#fff"
-    width = { 30 }
-    className = "SeachIcon"
-    style = {
-        { background: "rgba (0 0 0 0)", padding: "6px" }
-    }
-    /> < /
-    div >
+const ReactSearchSvg = () => (
+  <div style={styles} className="svg-box">
+    <IconSearch
+      fill="#fff"
+      width={30}
+      className="SeachIcon"
+      style={{ background: "rgba (0 0 0 0)", padding: "6px" }}
+    />
+  </div>
 );
 
-const SearchBar = () => ( <
-    div >
-    <
-    Styles >
-    <
-    div className = "searchBox" >
-    <
-    form >
-    <
-    div id = "searchBoxForSvg2"
-    className = "searchBoxForSvg" >
-    <
-    ReactSearchSvg / >
-    <
-    input type = "search" / >
-    <
-    /div> <
-    input className = "searchInput"
-    type = "submit"
-    value = "" / >
-    <
-    /form> < /
-    div > <
-    /Styles> < /
-    div >
+const SearchBar = () => (
+  <div>
+    <Styles>
+      <div className="searchBox">
+        <form>
+          <div id="searchBoxForSvg2" className="searchBoxForSvg">
+            <ReactSearchSvg />
+            <input type="search" />
+          </div>{" "}
+          <input className="searchInput" type="submit" value="" />
+        </form>{" "}
+      </div>{" "}
+    </Styles>{" "}
+  </div>
 );
 
 export default SearchBar;

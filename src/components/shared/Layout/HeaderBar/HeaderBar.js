@@ -1,20 +1,18 @@
 import React from "react";
 import Logo from "../Logo/Logo";
 import SearchBar from "../SearchBar/SearchBar";
-
+import SelectLangBar from "../SelectLangBar/SelectLangBar";
 import { Header, Container } from "./style";
-
-const HeaderBar = () => ( <
-    Header >
-    <
-    Container className = "container" >
-    <
-    Logo / >
-    <
-    SearchBar / >
-    <
-    /Container>{" "} <
-    /Header>
+import NavigationBar from "../NavigationBar/NavigationBar";
+const HeaderBar = () => (
+  <Header>
+    <Container className="container">
+      <Logo />
+      <SearchBar />
+      <SelectLangBar />
+      <NavigationBar />
+    </Container>
+  </Header>
 );
 
 export default HeaderBar;
