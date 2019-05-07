@@ -11,4 +11,6 @@ export const Container = styled.div`
   display: grid;
   grid-column-gap: 20px;
   grid-template-columns: auto auto auto auto;
+  width: 960px;
+  margin: 0px auto;
 `;

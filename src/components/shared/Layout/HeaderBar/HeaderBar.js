@@ -6,7 +6,7 @@ import { Header, Container } from "./style";
 import NavigationBar from "../NavigationBar/NavigationBar";
 const HeaderBar = () => (
   <Header>
-    <Container className="container">
+    <Container>
       <Logo />
       <SearchBar />
       <SelectLangBar />
