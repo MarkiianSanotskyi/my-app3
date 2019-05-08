@@ -9,8 +9,7 @@ const App = () => (
     <Router>
       <Layout>
         <Switch>
-          <Route  component={Home} />
-          <Route component={NoMatch} />
+          <Route exact path="/" component={Home} />
         </Switch>
       </Layout>
     </Router>
@@ -18,3 +17,5 @@ const App = () => (
 );
 
 export default App;
+
+// <Route component={NoMatch} />
