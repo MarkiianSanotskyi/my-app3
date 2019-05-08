@@ -10,6 +10,7 @@ const App = () => (
       <Layout>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route component={NoMatch} />
         </Switch>
       </Layout>
     </Router>
@@ -17,5 +18,3 @@ const App = () => (
 );
 
 export default App;
-
-// <Route component={NoMatch} />
