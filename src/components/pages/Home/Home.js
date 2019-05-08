@@ -33,5 +33,3 @@ export const Home = () => (
     </StyledUl>
   </Container>
 );
-
-var stop = 100;
