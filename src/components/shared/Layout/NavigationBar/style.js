@@ -19,4 +19,5 @@ export const LinkListBar = styled.a``;
 export const IconSearchBox = styled(IconSearch)`
   width: 20px;
   background: none;
+  outline: none;
 `;
