@@ -34,4 +34,3 @@ export const Home = () => (
   </Container>
 );
 
-var stop = 100;
