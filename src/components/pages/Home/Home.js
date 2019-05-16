@@ -31,3 +31,4 @@ export const Home = () => (
       </StyledLi>
     </StyledUl>
   </Container>
+);
