@@ -26,11 +26,8 @@ export const Home = () => (
       <StyledLi>
         <Card />
       </StyledLi>
-
       <StyledLi>
         <Card />
       </StyledLi>
     </StyledUl>
   </Container>
-);
-
