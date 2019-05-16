@@ -1,6 +1,7 @@
 import React from "react";
+import { ItemBox } from "./style";
 
-const Card = () => <h1>Here is my Card</h1>;
+const Card = () => <ItemBox>Here is my Card </ItemBox>;
 
 export default Card;
 
