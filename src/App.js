@@ -9,13 +9,12 @@ const App = () => (
     <Router>
       <Layout>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route component={Home} />
           <Route component={NoMatch} />
         </Switch>
       </Layout>
     </Router>
   </React.Fragment>
- 
 );
 
 export default App;
