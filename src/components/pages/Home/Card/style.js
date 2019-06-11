@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
-export const ItemBox= styled.h1`
+export const ItemBox = styled.div`
   width: 100%;
   height: auto;
-  background: grey;
+  a {
+    display: block;
+  }
 `;
