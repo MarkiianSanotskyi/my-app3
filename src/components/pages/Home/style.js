@@ -20,4 +20,6 @@ export const StyledLi = styled.li`
   margin-bottom: 25px;
   margin-top: 25px;
   list-style: none;
+  background-color: #fff;
+  height: 330px;
 `;

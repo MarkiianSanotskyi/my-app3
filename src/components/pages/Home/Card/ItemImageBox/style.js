@@ -10,3 +10,8 @@ export const ImageBox = styled.span`
     height: auto;
   }
 `;
+
+export const GlobalImageBox = styled.div`
+  padding: 30px;
+  border-bottom: 1px solid grey;
+`;
