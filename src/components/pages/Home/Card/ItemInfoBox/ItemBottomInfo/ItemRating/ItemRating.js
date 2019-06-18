@@ -8,7 +8,7 @@ let raitingList = [];
 
 for (let i = 0; i < 5; i++) {
   raitingList.push(
-    <ItemLiRating key={"ItemRaiting2" + i}>
+    <ItemLiRating key={"ItemRaiting" + i}>
       <img src={ItemRatingImg} alt="ItemRatingImg" />
     </ItemLiRating>
   );
