@@ -20,19 +20,19 @@ const Styles = styled.div`
 const FooterNavigationBar = () => (
   <Styles>
     <div>
-      <ul className="NavigationList">
-        <li>
-          <a href="/">Bla </a>
-        </li>
-        <li>
-          <a href="/">Bla </a>
-        </li>
-        <li>
-          <a href="/">Bla </a>
-        </li>
-      </ul>
+      <ul className="NavigationList">{linksFooter}</ul>
     </div>
   </Styles>
 );
+
+let linksFooter = [];
+
+for (let i = 0; i < 3; i++) {
+  linksFooter.push(
+    <li key={"unique:" + i}>
+      <a href="/">Bla </a>
+    </li>
+  );
+}
 
 export default FooterNavigationBar;
