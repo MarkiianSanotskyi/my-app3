@@ -7,7 +7,7 @@ let iconSearchList = [];
 
 for (let i = 0; i < 5; i++) {
   iconSearchList.push(
-    <LiListBar>
+    <LiListBar key={"LiListBar" + i}>
       <LinkListBar href="/">
         <IconSearchBox />
       </LinkListBar>

@@ -29,7 +29,7 @@ let linksFooter = [];
 
 for (let i = 0; i < 3; i++) {
   linksFooter.push(
-    <li>
+    <li key={"unique:" + i}>
       <a href="/">Bla </a>
     </li>
   );

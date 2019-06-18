@@ -13,7 +13,7 @@ let linksFooterPayments = [];
 
 for (let i = 0; i < 5; i++) {
   linksFooterPayments.push(
-    <LiListBar>
+    <LiListBar key={"LiListBar" + i}>
       <Logo />
     </LiListBar>
   );
