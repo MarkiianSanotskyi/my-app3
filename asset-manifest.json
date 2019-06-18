@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/my-app3/static/js/main.d007a877.chunk.js",
-    "main.js.map": "/my-app3/static/js/main.d007a877.chunk.js.map",
+    "main.js": "/my-app3/static/js/main.13689f12.chunk.js",
+    "main.js.map": "/my-app3/static/js/main.13689f12.chunk.js.map",
     "runtime~main.js": "/my-app3/static/js/runtime~main.6a834105.js",
     "runtime~main.js.map": "/my-app3/static/js/runtime~main.6a834105.js.map",
     "static/js/2.45386f1d.chunk.js": "/my-app3/static/js/2.45386f1d.chunk.js",
     "static/js/2.45386f1d.chunk.js.map": "/my-app3/static/js/2.45386f1d.chunk.js.map",
     "index.html": "/my-app3/index.html",
-    "precache-manifest.1c1417db8f47d9f6fb2456f18bb6383c.js": "/my-app3/precache-manifest.1c1417db8f47d9f6fb2456f18bb6383c.js",
+    "precache-manifest.e4b53e9377dd0cb72b485709e36448a5.js": "/my-app3/precache-manifest.e4b53e9377dd0cb72b485709e36448a5.js",
     "service-worker.js": "/my-app3/service-worker.js",
     "static/media/LogoItem.jpg": "/my-app3/static/media/LogoItem.69346982.jpg",
     "static/media/heart.png": "/my-app3/static/media/heart.a7b3c2f5.png",
