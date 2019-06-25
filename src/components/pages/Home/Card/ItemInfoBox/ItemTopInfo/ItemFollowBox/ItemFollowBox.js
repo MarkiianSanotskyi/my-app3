@@ -22,7 +22,7 @@ export default class ItemFollowBox extends React.Component {
     return (
       <Box>
         <BoxImg onClick={this.toggleClass.bind(this)}>
-          <HeartIcon fill={colorHeart}  />
+          <HeartIcon fill={colorHeart} fillRule={colorHeart} />
         </BoxImg>
       </Box>
     );

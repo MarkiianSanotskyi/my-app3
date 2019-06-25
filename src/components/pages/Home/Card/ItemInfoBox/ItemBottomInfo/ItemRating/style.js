@@ -15,7 +15,7 @@ export const ItemLiRating = styled.li`
   height: 15px;
   cursor: pointer;
   margin-right: 5px;
-  img {
+  svg {
     width: 100%;
     height: 100%;
   }
