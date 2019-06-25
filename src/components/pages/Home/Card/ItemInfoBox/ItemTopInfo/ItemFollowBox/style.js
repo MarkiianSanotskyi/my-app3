@@ -8,7 +8,19 @@ export const Box = styled.div`
   top: 50%;
   margin-top: -18px;
   right: 0px;
-  img {
+
+
+ 
+  
+  
+  }
+`;
+
+export const BoxImg = styled.div`
+  width: 100%;
+  height: 100%;
+
+  svg {
     width: 100%;
     height: 100%;
   }
