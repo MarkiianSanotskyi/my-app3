@@ -9,4 +9,3 @@ const ItemFollowBox = () => (
 );
 
 export default ItemFollowBox;
-
