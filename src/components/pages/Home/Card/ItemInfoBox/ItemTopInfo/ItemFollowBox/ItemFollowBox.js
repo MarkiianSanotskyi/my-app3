@@ -5,17 +5,17 @@ import HeartIcon from "../../../../../../shared/icons/HeartIcon/HeartIcon";
 export default class ItemFollowBox extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { addClass: false };
+    this.state = { followedHeart: false };
   }
 
   toggleClass() {
-    this.setState({ addClass: !this.state.addClass });
+    this.setState({ followedHeart: !this.state.followedHeart });
   }
 
   render() {
     let colorHeart = "#000";
 
-    if (this.state.addClass) {
+    if (this.state.followedHeart) {
       colorHeart = "red";
     }
 
