@@ -5,33 +5,34 @@ import RatingIcon from "../../../../../../shared/icons/RatingIcon/RatingIcon";
 export default class ItemRating extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { choosedRating: false };
+    this.state = {
+      clickedStar: 0
+    };
   }
 
-  toggleClass() {
-    this.setState({ choosedRating: !this.state.choosedRating });
-  }
+  handleStarClick = clickedStar => this.setState({ clickedStar: clickedStar });
 
   render() {
-    let colorRating = "#000";
-
-    if (this.state.choosedRating) {
-      colorRating = "red";
-    }
-
     const ItemRating = () => <ItemUlRating>{raitingList}</ItemUlRating>;
 
     let raitingList = [];
 
-    for (let i = 0; i < 5; i++) {
+    let activeStar;
+
+    for (let i = 1; i < 6; i++) {
+      if (i > this.state.clickedStar) {
+        activeStar = "#000";
+      } else {
+        activeStar = "orange";
+      }
+
       raitingList.push(
         <ItemLiRating
-          className="bla"
           key={"ItemRaiting" + (i + 1)}
-          data-place={i}
-          //onClick={this.toggleClass.bind(this)}
+          onClick={() => this.handleStarClick(i)}
+          data={i}
         >
-          <RatingIcon fill={colorRating} />
+          <RatingIcon fill={activeStar} />
         </ItemLiRating>
       );
     }
