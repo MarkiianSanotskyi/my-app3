@@ -17,13 +17,13 @@ export default class ItemRating extends React.Component {
 
     let raitingList = [];
 
-    let activeStar;
+    let className;
 
     for (let i = 1; i < 6; i++) {
       if (i > this.state.clickedStar) {
-        activeStar = "#000";
+        className = "ratingList";
       } else {
-        activeStar = "orange";
+        className = "ratingList active";
       }
 
       raitingList.push(
@@ -31,8 +31,9 @@ export default class ItemRating extends React.Component {
           key={"ItemRaiting" + (i + 1)}
           onClick={() => this.handleStarClick(i)}
           data={i}
+          className={className}
         >
-          <RatingIcon fill={activeStar} />
+          <RatingIcon />
         </ItemLiRating>
       );
     }

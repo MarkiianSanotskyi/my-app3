@@ -1,10 +1,11 @@
 import React from "react";
+import { StyledIcon } from "../../../../components/pages/Home/Card/ItemInfoBox/ItemBottomInfo/ItemRating/style";
 
 const SVG = ({
   style = {},
   id = "Capa_2",
   viewBox = "0 0 49.94 49.94",
-  fill = "#000"
+  fill = { StyledIcon }
 }) => (
   <svg
     style={style}

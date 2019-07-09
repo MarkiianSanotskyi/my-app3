@@ -31,5 +31,5 @@ export const ItemLiRating = styled.li`
 `;
 
 export const StyledIcon = styled.svg`
-  fill: red;
+  fill: yellow;
 `;
