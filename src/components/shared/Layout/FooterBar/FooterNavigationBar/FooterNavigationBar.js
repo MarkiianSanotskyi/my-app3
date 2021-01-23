@@ -8,7 +8,7 @@ const Styles = styled.div`
     font-size: 0px;
     display: grid;
     grid-column-gap: 20px;
-    grid-columns: 5;
+    grid-column: 6;
     grid-template-columns: auto auto auto auto auto auto;
     li {
       list-style: none;

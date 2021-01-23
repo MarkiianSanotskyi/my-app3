@@ -1,6 +1,6 @@
 import React from "react";
 import { UlListBar, LiListBar } from "./style";
-import Logo from "../Logo/Logo";
+import Logo from "../../Logo/Logo";
 
 const FooterPayment = () => (
   <UlListBar>
@@ -11,7 +11,7 @@ const FooterPayment = () => (
 
 let linksFooterPayments = [];
 
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 3; i++) {
   linksFooterPayments.push(
     <LiListBar key={"LiListBar" + i}>
       <Logo />

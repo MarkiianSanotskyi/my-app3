@@ -10,6 +10,7 @@ export const Footer = styled.footer`
 export const Container = styled.div`
   width: 960px;
   margin: 0px auto;
+  padding: 0px 15px;
   display: grid;
   grid-column-gap: 20px;
   grid-template-columns: auto auto auto auto;

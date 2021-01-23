@@ -7,7 +7,7 @@ export const SearchBox = styled.div`
   position: relative;
 `;
 
-export const FormBox = styled.form`
+export const FormBox = styled.div`
   position: relative;
 `;
 

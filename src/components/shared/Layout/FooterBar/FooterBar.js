@@ -1,14 +1,14 @@
 import React from "react";
 import { Footer, Container } from "./style";
-import CopyrightBar from "../CopyrightBar/CopyrightBar";
-import FooterNavigationBar from "../FooterNavigationBar/FooterNavigationBar";
-import FooterPayment from "../FooterPayment/FooterPayment";
+import CopyrightBar from "./CopyrightBar/CopyrightBar";
+import NavigationBar from "../NavigationBar/NavigationBar";
+import FooterPayment from "./FooterPayment/FooterPayment";
 
 const FooterBar = () => (
   <Footer>
     <Container>
       <CopyrightBar />
-      <FooterNavigationBar />
+      <NavigationBar />
       <FooterPayment />
     </Container>
   </Footer>
