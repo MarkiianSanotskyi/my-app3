@@ -1,16 +1,17 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { ImageBox, GlobalImageBox } from "./style";
-import ItemImage from "../../../../../assets/item2.jpg";
+import "../style.css";
 
-const ItemImageBox = () => (
-  <GlobalImageBox>
-    <a>
-      <ImageBox>
-        <img src={ItemImage} alt="ItemImage" />
-      </ImageBox>
-    </a>
-  </GlobalImageBox>
-);
+let imageUrl = "https://picsum.photos/350/256";
+
+function ItemImageBox() {
+  return (
+    <div className="imageBox">
+      <a href="/">
+        <img src={imageUrl} alt="good.name" />
+      </a>
+    </div>
+  );
+}
 
 export default ItemImageBox;

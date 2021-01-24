@@ -15,3 +15,13 @@ export const Container = styled.div`
   grid-column-gap: 20px;
   grid-template-columns: auto auto auto auto;
 `;
+export const Test = styled.div`
+  display: inline;
+  li {
+    font-size: 12px;
+
+    a {
+      color: white;
+    }
+  }
+`;

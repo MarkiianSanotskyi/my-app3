@@ -5,7 +5,7 @@ const NavigationBar = () => <UlListBar>{iconSearchList}</UlListBar>;
 
 let iconSearchList = [];
 
-const pageNames = ["Home", "Gallery", "AboutUs", "Contacts"];
+const pageNames = ["Home", "Gallery", "AboutUs", "Contact"];
 
 for (let i = 0; i < pageNames.length; i++) {
   iconSearchList.push(

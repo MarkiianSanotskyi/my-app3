@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import IconSearch from "../../icons/SearchIcon/SearchIcon";
-import searchImage from "../../../../assets/search.png";
+import IconSearch from "../../../icons/SearchIcon/SearchIcon";
+import searchImage from "../../../../../assets/search.png";
 
 export const SearchBox = styled.div`
   padding-top: 35px;

@@ -4,10 +4,12 @@
   "private": true,
   "homepage": "https://MarkiianSanotskyi.github.io/my-app3",
   "dependencies": {
+    "axios": "^0.21.1",
     "fsevents": "^2.3.1",
     "gh-pages": "2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-random-image": "^1.0.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.1",
     "react-svg": "9.0.4",

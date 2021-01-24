@@ -12,6 +12,6 @@ export const ImageBox = styled.span`
 `;
 
 export const GlobalImageBox = styled.div`
-  padding: 30px;
+  padding: 10px;
   border-bottom: 1px solid grey;
 `;

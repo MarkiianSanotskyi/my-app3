@@ -6,7 +6,6 @@ export const UlListBar = styled.ul`
   font-size: 0px;
   display: grid;
   grid-column-gap: 20px;
-  grid-column: 3;
   grid-template-columns: auto auto auto auto auto auto;
 `;
 

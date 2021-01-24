@@ -1,6 +1,6 @@
 import React from "react";
 import { UlListBar, LiListBar } from "./style";
-import Logo from "../../Logo/Logo";
+import Logo from "../../HeaderBar/Logo/Logo";
 
 const FooterPayment = () => (
   <UlListBar>

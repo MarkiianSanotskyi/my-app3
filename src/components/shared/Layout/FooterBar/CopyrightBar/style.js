@@ -5,5 +5,4 @@ export const StyledP = styled.p`
   font-size: 10px;
   margin-bottom: 0px;
   display: grid;
-  grid-column: 3;
 `;
