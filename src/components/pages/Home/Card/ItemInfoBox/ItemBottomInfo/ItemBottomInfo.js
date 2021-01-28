@@ -5,8 +5,13 @@ import ItemPrice from "./ItemPrice/ItemPrice";
 
 const ItemBottomInfo = () => (
   <Box>
-    <ItemRating />
-    <ItemPrice />
+    <div className="bottomInfoBox">
+      <div className="left" />
+      <ItemRating />
+    </div>
+    <div className="right">
+      <ItemPrice /> $
+    </div>
   </Box>
 );
 
