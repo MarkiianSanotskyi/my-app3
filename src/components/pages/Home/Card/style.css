@@ -35,7 +35,7 @@ h1, h1 a{
 .info{
     float: left;
     padding-left: 9px;
-    max-width: 125px;
+    max-width: 110px;
 }
 
 .info p {
@@ -48,19 +48,21 @@ li {
 
 
 .bottomInfoBox {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    width: calc(100% - 30px);
+   display: flex;
 }
 
 .bottomInfoBox .left {
-    float: left;
+    flex: 2;
 }
 
 .bottomInfoBox .right{
     font-size: 15px;
     color: black;
     font-weight: bold;
-    float: right;
+    flex: 1;
+    text-align: right;
+    
+}
+.item-info-box {
+    padding: 0px 10px 10px 10px;
 }

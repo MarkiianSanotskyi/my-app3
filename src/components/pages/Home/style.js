@@ -21,5 +21,4 @@ export const StyledLi = styled.li`
   margin-top: 25px;
   list-style: none;
   background-color: #fff;
-  height: 330px;
 `;

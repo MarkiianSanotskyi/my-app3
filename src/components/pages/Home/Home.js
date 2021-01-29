@@ -13,7 +13,7 @@ export const Home = props => {
         rated: true,
         number: 3
       },
-      price: "126.00"
+      price: 126.0
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ export const Home = props => {
         rated: true,
         number: 5
       },
-      price: "548.00"
+      price: 548.0
     },
     {
       id: 3,
@@ -35,7 +35,7 @@ export const Home = props => {
         rated: false,
         number: 0
       },
-      price: "291.00"
+      price: 291.0
     },
     {
       id: 4,
@@ -43,10 +43,10 @@ export const Home = props => {
       description: "Rubber",
       like: false,
       rating: {
-        rated: false,
-        number: 0
+        rated: true,
+        number: 1
       },
-      price: "985.00"
+      price: 985.0
     },
     {
       id: 5,
@@ -57,7 +57,7 @@ export const Home = props => {
         rated: false,
         number: 0
       },
-      price: "592.00"
+      price: 592.0
     },
     {
       id: 6,
@@ -65,10 +65,10 @@ export const Home = props => {
       description: "Metal",
       like: true,
       rating: {
-        rated: false,
-        number: 0
+        rated: true,
+        number: 4
       },
-      price: "712.00"
+      price: 712.0
     },
     {
       id: 7,
@@ -79,7 +79,7 @@ export const Home = props => {
         rated: true,
         number: 2
       },
-      price: "601.00"
+      price: 601.0
     },
     {
       id: 8,
@@ -90,7 +90,7 @@ export const Home = props => {
         rated: false,
         number: 0
       },
-      price: "590.00"
+      price: 590.0
     },
     {
       id: 9,
@@ -101,7 +101,7 @@ export const Home = props => {
         rated: false,
         number: 0
       },
-      price: "316.00"
+      price: 316.0
     }
   ];
   return (
@@ -115,6 +115,7 @@ export const Home = props => {
               description={item.description}
               likeState={item.like}
               rating={item.rating}
+              price={item.price}
             />
           </StyledLi>
         ))}

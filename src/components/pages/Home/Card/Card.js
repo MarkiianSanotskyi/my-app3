@@ -8,7 +8,7 @@ import ItemInfoBox from "./ItemInfoBox/ItemInfoBox";
 const Card = props => {
   console.log(props.rating);
   return (
-    <div>
+    <div className="item-list-container">
       <ItemImageBox />
       <ItemInfoBox
         itemId={props.itemId}
@@ -16,6 +16,7 @@ const Card = props => {
         description={props.description}
         likeState={props.likeState}
         rating={props.rating}
+        price={props.price}
       />
     </div>
   );

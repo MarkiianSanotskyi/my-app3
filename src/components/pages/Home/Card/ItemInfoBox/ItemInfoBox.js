@@ -12,7 +12,11 @@ const ItemInfoBox = props => {
         rating={props.rating}
         className="topInfoBox"
       />
-      <ItemBottomInfo />
+      <ItemBottomInfo
+        rating={props.rating}
+        price={props.price}
+        itemId={props.itemId}
+      />
     </div>
   );
 };

@@ -1,9 +1,9 @@
 import React from "react";
 import { ItemPriceBox } from "./style";
 
-const ItemPrice = () => (
+const ItemPrice = props => (
   <ItemPriceBox>
-    98 <strong>$</strong>
+    {props.price} <strong>$</strong>
   </ItemPriceBox>
 );
 
