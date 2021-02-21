@@ -25,3 +25,19 @@ export const Test = styled.div`
     }
   }
 `;
+
+export const AddData = styled.button`
+  background-color: #f4511e;
+  outline: none;
+  border: none;
+  border-raidus: 5px;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  :focus {
+    outline: none;
+  }
+  :hover {
+    opacity: 0.8;
+  }
+`;
