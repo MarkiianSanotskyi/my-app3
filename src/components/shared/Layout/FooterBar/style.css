@@ -1,0 +1,25 @@
+.btn.addDataBtn {
+    background-color: #f4511e;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    line-height: inherit;
+}
+.btn.addDataBtn:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+.btn.addDataBtn:hover {
+    opacity: 0.8;
+  }
+
+  .btn-white{ 
+    color: #f4511e;
+    text-decoration: underline;
+  }
+
+

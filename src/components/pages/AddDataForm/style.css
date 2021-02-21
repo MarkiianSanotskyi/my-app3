@@ -1,0 +1,23 @@
+.appBarBox button{
+    display: none !important;
+}
+.appBarBox {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+.additionDesctiption{
+    margin: 25px;
+    
+}
+.additionDesctiption h1 {
+    font-size: 20px;
+    color: rgb(0, 188, 212);
+    font-weight: bold;
+}
+
+.marginBtn {
+    margin: 15px;
+}

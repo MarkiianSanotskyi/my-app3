@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Home } from "./components/pages/Home/Home";
+import { AddDataForm } from "./components/pages/AddDataForm/AddDataForm";
 import { NoMatch } from "./components/pages/NoMatch/NoMatch";
 import { Layout } from "./components/shared/Layout/Layout";
 
@@ -9,8 +10,9 @@ const App = () => (
     <Router>
       <Layout>
         <Switch>
-          <Route component={Home} />
-          <Route component={NoMatch} />
+          <Route exact path="/" component={Home} />
+          <Route path="/add-data-form" component={AddDataForm} />
+          <Route path="/nomatch" component={NoMatch} />
         </Switch>
       </Layout>
     </Router>
