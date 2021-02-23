@@ -10,7 +10,7 @@ const pageNames = ["Home", "Gallery", "AboutUs", "Contact"];
 for (let i = 0; i < pageNames.length; i++) {
   iconSearchList.push(
     <LiListBar key={"LiListBar" + i}>
-      <LinkListBar href="/">{pageNames[i]}</LinkListBar>
+      <LinkListBar href="/my-app3">{pageNames[i]}</LinkListBar>
     </LiListBar>
   );
 }

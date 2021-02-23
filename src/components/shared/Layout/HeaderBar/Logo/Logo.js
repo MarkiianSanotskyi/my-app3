@@ -12,7 +12,7 @@ const Styles = styled.div`
 
 const Logo = () => (
   <Styles>
-    <a href="/" className="logo">
+    <a href="/my-app3" className="logo">
       <img src={logoImage} alt="logo" />
     </a>
   </Styles>
