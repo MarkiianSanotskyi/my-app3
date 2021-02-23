@@ -6,7 +6,7 @@ import { RaisedButton, TextField } from "material-ui";
 // import TextField from "material-ui/TextField";
 // import RaisedButton from "material-ui/RaisedButton";
 
-export class FormUserDetails extends Component {
+class FormUserDetails extends Component {
   continue = e => {
     e.preventDefault();
     this.props.nextStep();
@@ -14,7 +14,6 @@ export class FormUserDetails extends Component {
 
   render() {
     const { values, handleChange } = this.props;
-
     return (
       <MuiThemeProvider>
         <React.Fragment>

@@ -8,11 +8,19 @@ let iconSearchList = [];
 const pageNames = ["Home", "Gallery", "AboutUs", "Contact"];
 
 for (let i = 0; i < pageNames.length; i++) {
-  iconSearchList.push(
-    <LiListBar key={"LiListBar" + i}>
-      <LinkListBar href="/my-app3">{pageNames[i]}</LinkListBar>
-    </LiListBar>
-  );
+  if (i === 0) {
+    iconSearchList.push(
+      <LiListBar key={"LiListBar" + i}>
+        <LinkListBar href="/my-app3">{pageNames[i]}</LinkListBar>
+      </LiListBar>
+    );
+  } else {
+    iconSearchList.push(
+      <LiListBar key={"LiListBar" + i}>
+        <LinkListBar href={`/${pageNames[i]}`}>{pageNames[i]}</LinkListBar>
+      </LiListBar>
+    );
+  }
 }
 
 export default NavigationBar;
