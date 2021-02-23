@@ -10,7 +10,7 @@ const App = () => (
     <Router>
       <Layout>
         <Switch>
-          <Route exact path="/my-app3" component={Home} />
+          <Route path="/my-app3" component={Home} />
           <Route path="/add-data-form" component={AddDataForm} />
           <Route path="/nomatch" component={NoMatch} />
         </Switch>

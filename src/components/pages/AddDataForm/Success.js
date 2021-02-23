@@ -23,7 +23,7 @@ export class Success extends Component {
           <div className="center additionDesctiption">
             <h1>Thank You For Your Submission</h1>
             <p>You will get an email with further instruction</p>
-            <Link className="btn-white" to="/">
+            <Link className="btn-white" to="/my-app3">
               Back To Home
             </Link>
           </div>
