@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import AppBar from "material-ui/AppBar";
 import { List, ListItem } from "material-ui/List";
-import RaisedButton from "material-ui/RaisedButton";
+import ButtonGroup from "@material-ui/core/ButtonGroup";
+import Button from "@material-ui/core/Button";
+import { makeStyles } from "@material-ui/core/styles";
 
 export class Confirm extends Component {
   continue = e => {
@@ -20,6 +22,44 @@ export class Confirm extends Component {
     const {
       values: { firstName, lastName, email, occupation, city, bio }
     } = this.props;
+    const useStyles = makeStyles({
+      root: {
+        backgroundColor: "#f4511e",
+        marginTop: "15px",
+        color: "white",
+        borderRadius: "0"
+      }
+    });
+
+    const useStylesSecond = makeStyles({
+      root: {
+        backgroundColor: "white",
+        marginTop: "15px",
+        color: "#f4511e",
+        borderRadius: "0"
+      }
+    });
+
+    const ButtonStyledContinue = () => {
+      const classes = useStyles();
+      return (
+        <Button
+          color="primary"
+          className={classes.root}
+          onClick={this.continue}
+        >
+          Continue
+        </Button>
+      );
+    };
+    const ButtonStyledBack = () => {
+      const classes = useStylesSecond();
+      return (
+        <Button className={classes.root} onClick={this.back}>
+          Back
+        </Button>
+      );
+    };
     return (
       <MuiThemeProvider>
         <React.Fragment>
@@ -33,18 +73,20 @@ export class Confirm extends Component {
               <ListItem primaryText="City" secondaryText={city} />
               <ListItem primaryText="BIO" secondaryText={bio} />
             </List>
-            <RaisedButton
-              label="Confirm & Continue"
-              className="marginBtn"
-              primary={true}
-              onClick={this.continue}
-            />
-            <RaisedButton
-              className="marginBtn"
-              label="Back"
-              primary={false}
-              onClick={this.back}
-            />
+            <ButtonGroup className="button-box">
+              <ButtonStyledContinue
+                label="Confirm & Continue"
+                className="marginBtn"
+                primary={true}
+                onClick={this.continue}
+              />
+              <ButtonStyledBack
+                className="marginBtn"
+                label="Back"
+                primary={false}
+                onClick={this.back}
+              />
+            </ButtonGroup>
           </div>
         </React.Fragment>
       </MuiThemeProvider>

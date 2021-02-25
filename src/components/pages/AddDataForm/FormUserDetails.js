@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import "./style.css";
 import AppBar from "material-ui/AppBar";
-import { RaisedButton, TextField } from "material-ui";
-// import TextField from "material-ui/TextField";
-// import RaisedButton from "material-ui/RaisedButton";
+import Button from "@material-ui/core/Button";
+import TextField from "@material-ui/core/TextField";
+import { makeStyles } from "@material-ui/core/styles";
 
 class FormUserDetails extends Component {
   continue = e => {
@@ -14,38 +14,60 @@ class FormUserDetails extends Component {
 
   render() {
     const { values, handleChange } = this.props;
+    const useStyles = makeStyles({
+      root: {
+        backgroundColor: "#f4511e",
+        marginTop: "15px",
+        color: "white",
+        borderRadius: "0"
+      }
+    });
+
+    const ButtonStyled = () => {
+      const classes = useStyles();
+      return (
+        <Button
+          color="primary"
+          className={classes.root}
+          onClick={this.continue}
+        >
+          Continue
+        </Button>
+      );
+    };
     return (
       <MuiThemeProvider>
         <React.Fragment>
           <AppBar className="appBarBox" title="Enter User Details" />
           <div className="center">
             <TextField
-              hintText="Enter Your First Name"
-              floatingLabelText="First Name"
+              className="form-input"
+              variant="outlined"
+              type="text"
+              label="Enter Your First Name"
               onChange={handleChange("firstName")}
               defaultValue={values.firstName}
             />
             <br />
             <TextField
-              hintText="Enter Your Last Name"
-              floatingLabelText="Last Name"
+              className="form-input"
+              variant="outlined"
+              type="text"
+              label="Enter Your Last Name"
               onChange={handleChange("lastName")}
               defaultValue={values.lastName}
             />
             <br />
             <TextField
-              hintText="Enter Your Email"
-              floatingLabelText="Email"
+              className="form-input"
+              variant="outlined"
+              type="email"
+              label="Enter Your Email"
               onChange={handleChange("email")}
               defaultValue={values.email}
             />
             <br />
-            <RaisedButton
-              className="marginBtn"
-              label="Continue"
-              color="primary"
-              onClick={this.continue}
-            />
+            <ButtonStyled>Continue</ButtonStyled>
           </div>
         </React.Fragment>
       </MuiThemeProvider>

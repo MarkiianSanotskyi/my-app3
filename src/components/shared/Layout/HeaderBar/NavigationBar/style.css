@@ -1,0 +1,19 @@
+.link-list-bar {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    text-transform: capitalize;
+}
+
+.link-list-bar:hover,
+.link-list-bar:focus,
+.link-list-bar:visited,
+.link-list-bar:link,
+.link-list-bar:active {
+    text-decoration: none;
+}
+.link-list-bar:hover,
+.link-list-bar:active {
+    color: #f4511e !important;
+    text-decoration: underline;
+}

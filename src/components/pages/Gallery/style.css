@@ -7,14 +7,15 @@
 
 .center {
     text-align: center;
-}
-.additionDesctiption{
-    margin: 25px auto 0px auto;
     
 }
-.center.additionDesctiption h1 {
+.additionDesctiption{
+    margin: 25px;
+    
+}
+.additionDesctiption h1 {
     font-size: 20px;
-    color: black;
+    color: rgb(0, 188, 212);
     font-weight: bold;
 }
 
@@ -22,19 +23,19 @@
     margin: 15px;
 }
 
+.pixabay-box {
+    max-width: 256px;
+    margin: 0px auto;
+    
+}
+.tile-box{
+    width: 100vw;
+
+}
+
 .form-input {
     margin-top: 25px !important;
 }
 .form-input input {
     color: black;
-}
-
-.appBarBox{
-    background-color: #f4511e !important;
-}
-.button-box {
-    margin-top: 25px;
-}
-.button-box button {
-margin: 0px 10px;
 }

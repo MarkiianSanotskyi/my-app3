@@ -1,6 +1,9 @@
 import React from "react";
 import AppBar from "material-ui/AppBar";
+import "../style.css";
 
-const GalleryNavBar = () => <AppBar title="Pixabay Image Finder" />;
+const GalleryNavBar = () => (
+  <AppBar className="appBarBox" title="Pixabay Image Finder" />
+);
 
 export default GalleryNavBar;

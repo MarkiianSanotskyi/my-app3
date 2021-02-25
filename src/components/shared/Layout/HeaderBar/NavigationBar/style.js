@@ -16,25 +16,6 @@ export const LiListBar = styled.li`
   align-items: center;
 `;
 
-export const LinkListBar = styled.a`
-  text-decoration: none;
-  color: black;
-  transition: 0.3s;
-
-  &:focus,
-  &:hover,
-  &:visited,
-  &:link,
-  &:active {
-    text-decoration: none;
-  }
-
-  &:hover,
-  &:active {
-    color: #f4511e !important;
-    text-decoration: underline;
-  }
-`;
 export const IconSearchBox = styled(IconSearch)`
   width: 20px;
   background: none;

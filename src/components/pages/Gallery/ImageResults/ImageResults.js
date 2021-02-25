@@ -52,7 +52,7 @@ class ImageResults extends Component {
     }
 
     const actions = [
-      <FlatButton label="Close" primary={true} onClick={this.handleClose} />
+      <FlatButton label="Close" primary={false} onClick={this.handleClose} />
     ];
     return (
       <div>
