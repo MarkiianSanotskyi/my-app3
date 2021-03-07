@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://MarkiianSanotskyi.github.io/my-app3",
   "dependencies": {
+    "1.0.2": "^1.0.0",
     "@material-ui/core": "^4.11.3",
     "@okta/okta-react": "^4.1.0",
     "@okta/okta-signin-widget": "^5.4.2",
