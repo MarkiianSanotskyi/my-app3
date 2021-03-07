@@ -5,6 +5,8 @@
   "homepage": "https://MarkiianSanotskyi.github.io/my-app3",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
+    "@okta/okta-react": "^4.1.0",
+    "@okta/okta-signin-widget": "^5.4.2",
     "axios": "^0.21.1",
     "fsevents": "^2.3.1",
     "gh-pages": "2.0.1",

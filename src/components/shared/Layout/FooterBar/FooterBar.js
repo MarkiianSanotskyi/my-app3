@@ -7,17 +7,15 @@ import NavigationBar from "../HeaderBar/NavigationBar/NavigationBar";
 import FooterPayment from "./FooterPayment/FooterPayment";
 import Facebook from "../../../buttons/Facebook";
 
-const FooterBar = () => (
+const FooterBar = props => (
   <Footer>
-    <div
-      className="fb-footer"
-      style={{
-        width: "100%",
-        textAlign: "center",
-        paddingBottom: "20px"
-      }}
-    >
+    <div className="fb-footer">
       <Facebook />
+    </div>
+    <div className="sendToLogIn">
+      <Link onClick={props.press} className="btn" to="/home-login">
+        LogIn Component
+      </Link>
     </div>
     <Container>
       <CopyrightBar />

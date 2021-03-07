@@ -22,4 +22,32 @@
     text-decoration: underline;
   }
 
+  .fb-footer {
 
+      width: 100%;
+      text-align: center;
+      padding-bottom: 20px;
+    
+  }
+
+  .sendToLogIn {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+.sendToLogIn a {
+  background-color: #f4511e;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+}
+.sendToLogIn a:hover{
+    opacity: 0.8;
+    color: white;
+}
+
+
+.footer-no-login .fb-footer,
+.footer-no-login .sendToLogIn {
+display:none !important;
+}
